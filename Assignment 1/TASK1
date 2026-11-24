@@ -1,0 +1,6 @@
+function units_text(prev_str, cur_str):          // d digits each
+    prev = 0
+    for each character c in prev_str: prev = prev*10 + (c - '0')    // O(d)
+    cur = 0
+    for each character c in cur_str:  cur  = cur*10  + (c - '0')    // O(d)
+    return (cur - prev) mod 65536
